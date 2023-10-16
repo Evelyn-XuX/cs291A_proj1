@@ -53,6 +53,9 @@ class AboutDiceProject < Neo::Koan
     # If the rolls are random, then it is possible (although not
     # likely) that two consecutive rolls are equal.  What would be a
     # better way to test this?
+    # A more robust way to test the randomness of the dice rolls might be to 
+    #roll the dice a large number of times and verify that the distribution of 
+    #results approximates a uniform distribution, rather than comparing only two rolls, which might coincidentally be equal.
   end
 
   def test_you_can_roll_different_numbers_of_dice

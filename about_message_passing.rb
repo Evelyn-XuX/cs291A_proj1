@@ -36,6 +36,7 @@ class AboutMessagePassing < Neo::Koan
     # THINK ABOUT IT:
     #
     # Why does Ruby provide both send and __send__ ?
+    #avoid override send method or mix them
   end
 
   def test_classes_can_be_asked_if_they_know_how_to_respond
@@ -96,6 +97,7 @@ class AboutMessagePassing < Neo::Koan
     #
     # If the method :method_missing causes the NoMethodError, then
     # what would happen if we redefine method_missing?
+    # Redefining method_missing allows us to customize how our object responds to calls to methods it doesn’t know
     #
     # NOTE:
     #

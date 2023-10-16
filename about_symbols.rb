@@ -32,6 +32,7 @@ class AboutSymbols < Neo::Koan
   #
   # Why do we convert the list of symbols to strings and then compare
   # against the string value rather than against symbols?
+  # By converting to strings, comparisons can be made without affecting the symbol table
 
   in_ruby_version("mri") do
     RubyConstant = "What is the sound of one hand clapping?"
@@ -97,4 +98,6 @@ class AboutSymbols < Neo::Koan
   # THINK ABOUT IT:
   #
   # Why is it not a good idea to dynamically create a lot of symbols?
+  # Symbols are stored in memory and are not garbage collected during 
+  # a Ruby program's execution, meaning once a symbol is created, it will stay in memory until the program exits. 
 end

@@ -42,6 +42,7 @@ class AboutHashes < Neo::Koan
 
     # Bonus Question: Why was "expected" broken out into a variable
     # rather than used as a literal?
+    # it can enhance readability and reuseablity of the code
   end
 
   def test_hash_is_unordered

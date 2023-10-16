@@ -41,6 +41,7 @@ class AboutRegularExpressions < Neo::Koan
   # We say that the repetition operators above are "greedy."
   #
   # Why?
+  # Repetition operators (*, +, and ?) in regular expressions are termed "greedy" because they try to match as much text as possible.
 
   # ------------------------------------------------------------------
 
@@ -145,7 +146,8 @@ class AboutRegularExpressions < Neo::Koan
   # THINK ABOUT IT:
   #
   # Explain the difference between a character class ([...]) and alternation (|).
-
+  # A character class ([...]) matches any one of the enclosed characters, 
+  # while alternation (|) matches one of the alternative patterns separated by the pipe.
   # ------------------------------------------------------------------
 
   def test_scan_is_like_find_all

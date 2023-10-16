@@ -66,7 +66,7 @@ class AboutConstants < Neo::Koan
     assert_equal 2, MyAnimals::Bird.new.legs_in_bird
   end
 
-  # QUESTION: Which has precedence: The constant in the lexical scope,
+  # : Which has precedence: The constant in the lexical scope,
   # or the constant from the inheritance hierarchy?
 
   # it will first look within its own scope and any surrounding scopes before it looks into its ancestors or inheritance
@@ -86,5 +86,6 @@ class AboutConstants < Neo::Koan
   # QUESTION: Now which has precedence: The constant in the lexical
   # scope, or the constant from the inheritance hierarchy?  Why is it
   # different than the previous answer?
+  # In this case, the constant is found via the inheritance chain because the lexical scope of the Oyster class does not include the MyAnimals module.
 
 end
